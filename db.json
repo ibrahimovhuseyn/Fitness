@@ -1,0 +1,145 @@
+{
+  "blogs": [
+    {
+      "user_id": 3,
+      "title": "About nutrition",
+      "img_url": "https://azertag.az/files/galleryphoto/2017/2/750x500/149604300950933826_750x500.jpg",
+      "description": "Emphasizes fruits, vegetables, whole grains, and fat-free or low-fat milk and milk products. Includes a variety of protein foods such as seafood, lean meats and poultry, eggs, legumes (beans and peas), soy products, nuts, and seeds. Is low in added sugars, sodium, saturated fats, trans fats, and cholesterol.",
+      "id": 1
+    },
+    {
+      "user_id": 1,
+      "title": "Fitness",
+      "img_url": "data:image/jpeg;base64,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",
+      "description": "Start in the pull-up's hanging position, then squeeze your shoulders back and down. Swing your legs to create a “kipping” motion. As your legs move forward, raise yourself using the same movement as a straight arm pull-down, driving your hips to the bar. Push away and swing your legs back for rep two.",
+      "id": 2
+    },
+    {
+      "user_id": 2,
+      "title": "Lose weight",
+      "img_url": "https://media-cldnry.s-nbcnews.com/image/upload/t_focal-460x460,f_auto,q_auto:best/newscms/2020_11/3268306/200312-fit-woman-strong-ac-1159p.jpg",
+      "description": "Cutting carbs, eating more protein, lifting weights, and getting more sleep are all actions that can promote sustainable weight loss.\n\nFocusing on long-term health and habits that you can stick with over time will help improve your health and are more likely to result in lasting weight loss.\n\nHere are some science-backed tips to help you lose weight.",
+      "id": 3
+    },
+    {
+      "user_id": 4,
+      "title": "How to grow muscle",
+      "img_url": "https://i.ytimg.com/vi/l4FBOjCTe90/maxresdefault.jpg",
+      "description": "Before we dive into the world of muscle building, let’s understand what muscle mass is all about. Our bodies are equipped with different types of muscles, including skeletal, smooth, and cardiac muscles. Understanding the basics of muscle mass will lay the foundation for your muscle-building journey.\n\nMuscle mass refers to the weight of the muscles in our bodies, or the total amount of muscle tissue. More specifically, it is the measure of the size of the muscle fibres and the number of the fibres present in the muscles. Muscle mass plays a crucial role in maintaining our physical health, including our strength, balance, and metabolism. It is also an important factor for athletes and fitness enthusiasts as it directly correlates with their performance in physical activities.",
+      "id": 4
+    },
+    {
+      "user_id": 3,
+      "title": "To raise own shoulders",
+      "img_url": "https://s3assets.skimble.com/assets/1375647/image_iphone.jpg",
+      "description": "Stand with feet shoulder-width apart. Squeeze your glutes and engage your core. Start with the dumbbells down by your side. Keeping your shoulders slightly pulled back and chest up and open, raise both arms up and away from the body until they are at shoulder height and parallel to the floor. Reverse the movement and return to the start position. Maintain straight arms without locking the elbows for the duration of the exercise. Move steadily and avoid using momentum to lift the dumbells. The hips should not move, only the arms.",
+      "id": 5
+    },
+    {
+      "user_id": 5,
+      "title": "Weightlifting",
+      "img_url": "https://hips.hearstapps.com/hmg-prod/images/wesley-brian-kitts-of-team-united-states-competes-during-news-photo-1632156362.jpg",
+      "description": "Weightlifting has a lengthy history. For many prehistoric tribes, the traditional test of manhood was the lifting of a special rock. Such manhood stones, some with the name of the first lifter incised, exist in Greece and in Scottish castles. The competitive lifting of stones still persists locally in Germany, Switzerland, the highlands of Montenegro, and the Basque region of Spain. In many such events the consecutive number of lifts within a given time period is used to declare a winner.",
+      "id": 6
+    },
+    {
+      "user_id": 7,
+      "title": "Combat training",
+      "img_url": "https://images02.military.com/sites/default/files/styles/full/public/2018-05/basic-combat-training-1200.jpg",
+      "description": "Military education and training is a process which intends to establish and improve the capabilities of military personnel in their respective roles. Military training may be voluntary or compulsory duty. It begins with recruit training, proceeds to education and training specific to military roles, and sometimes includes additional training during a military career. Directing staff are the military personnel who comprise the instructional staff at a military training institution.\n\nIn some countries, military education and training are parts of the compulsory education. The organizers believe that military education can bring some benefits and experiences that cannot be obtained from normal class like setback education. Moreover, participants are able to learn survival skills during the military education, like co-operations and resilience, which help participants improve the capabilities of military personnel in their respective roles.",
+      "id": 7
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "fullname": "Pervin Pashazade",
+      "username": "pervin",
+      "email": "pervin@mail.ru",
+      "password": "pervin",
+      "nickname": "Developer",
+      "img_url": "https://i2-prod.football.london/incoming/article26465769.ece/ALTERNATES/s1200c/0_GettyImages-1247916157.jpg"
+    },
+    {
+      "id": 2,
+      "fullname": "Yasemen Memmedli",
+      "username": "yasemen",
+      "email": "yasemen@mail.ru",
+      "password": "yasemen",
+      "nickname": "Mentor",
+      "img_url": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2022%2F09%2F22%2FShakira-Elle-interview-092122.jpg"
+    },
+    {
+      "id": 3,
+      "fullname": "Huseyn Ibrahimov",
+      "username": "huseyn",
+      "email": "huseyn@mail.ru",
+      "password": "huseyn",
+      "nickname": "Boyka",
+      "img_url": "https://parimatchnews.com/wp-content/uploads/2021/01/Screenshot_1-634x640.png"
+    },
+    {
+      "id": 4,
+      "fullname": "Resad Sadiqov",
+      "username": "resad",
+      "email": "resad@mail.ru",
+      "nickname": "Akula",
+      "password": "resad",
+      "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/R%C9%99%C5%9Fad_Sad%C4%B1qov.jpg/640px-R%C9%99%C5%9Fad_Sad%C4%B1qov.jpg"
+    },
+    {
+      "fullname": "Sadiq Shabanov",
+      "username": "sadiq1554",
+      "email": "sadiq@mail.ru",
+      "nickname": "Sado",
+      "password": "sadiq",
+      "id": 5
+    },
+    {
+      "fullname": "Nicat Huseynov",
+      "username": "nicat_trainer",
+      "email": "nicat@mail.ru",
+      "nickname": "niko039",
+      "password": "nicat",
+      "id": 6
+    },
+    {
+      "fullname": "Mirzeaga Esgerov",
+      "username": "mirzeaga",
+      "email": "miri@mail.ru",
+      "nickname": "miri_044",
+      "password": "mirzeaga",
+      "id": 7
+    }
+  ],
+  "products": [
+    {
+      "id" : 1,
+      "name": "Whey Protein",
+      "price": "156$",
+      "img_url": "https://olimp.az/29-large_default/whey-protein-complex-700-qr.jpg",
+      "about": "Whey is left over when milk is coagulated during the process of cheese production, and contains everything that is soluble from milk after the pH is dropped to 4.6 during the coagulation process. It is a 5% solution of lactose in water and contains the water soluble proteins of milk as well as some lipid content."
+    },
+    {
+      "id" : 2,
+      "name": "Amino 8000",
+      "price": "60%",
+      "img_url": "https://proteinshop.az/files/products/gaspari_aminomax8000_325_front.600x600.png",
+      "about": "Gaspari Nutrition's AMINOMAX 8000 is a scientifically designed blend of 91% hydrolyzed lactalbumin from whey protein, containing very low molecular weight proteins, di- and tri- peptides and individual amino acids infused with additional L-Leucine and L-Taurine, proven to be exceedingly beneficial to all types of ..."
+    },
+    {
+      "id": 3,
+      "name": "Gainer",
+      "price": "95$",
+      "img_url": "https://s3.images-iherb.com/opn/opn02971/y/41.jpg",
+      "about": "A combination of protein and carbohydrates.Thanks to its composition rich in protein and carbohydrates, the gainer is the ideal supplement if your goal is to have more strength, mass or gain weight. Its high caloric intake promotes gain in mass or gain in weight."
+    },
+    {
+      "id" : 4,
+      "name": "TurinaBol",
+      "price": "44$",
+      "img_url": "https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1678776196.webp",
+      "about": "What is Turinabol? Turinabol's anabolic ability makes it the best steroid for speedy recovery which will come in handy to reduce swelling, and muscle fatigue to help users exercise for longer. Turinabol steroid entered into medical science for the treatment of Osteoporosis, but later it was discontinued"
+    }
+  ]
+}

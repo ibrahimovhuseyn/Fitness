@@ -1,0 +1,91 @@
+.home {
+    margin: 25px;
+    margin-left: 140px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 45px;
+}
+
+
+.homeForm {
+    max-width: 350px;
+    max-height: 440px;
+    align-items: center;
+    border: 1px solid rgba(219, 219, 219);
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+.homeForm h1 {
+    padding: 50px 0;
+}
+
+.homeForm input {
+    margin-left: 15%;
+    width: 75%;
+    margin-top: 10px;
+}
+
+.homeForm button {
+    padding: 5px 100px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.homeForm .after {
+    height: 3px;
+    width: 45%;
+    background-color: rgba(219, 219, 219);
+    margin: 0 15px 0 15px;
+}
+
+.homeForm p {
+    padding-top: 10px;
+}
+
+.facebook {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.facebook .link {
+    text-decoration: none;
+    color: #385185;
+    font-weight: 700;
+}
+
+.homeRegister {
+    margin-top: 35px;
+    max-width: 350px;
+    align-items: center;
+    border: 1px solid rgba(219, 219, 219);
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+.homeRegister a {
+    text-decoration: none;
+    color: #0095f6;
+    font-weight: 500;
+}
+
+.right {
+    width: 400px;
+    height: 560px;
+}
+
+.right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right img{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#password{
+    width: 15px;
+}

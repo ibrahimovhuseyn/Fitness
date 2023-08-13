@@ -1,0 +1,50 @@
+.blogs{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.blogs .img_wrapper {
+    max-width: 350px;
+    max-height: 80%;
+}
+
+.blogs .img_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content h1{
+    text-decoration: underline;
+    color: rgb(35, 89, 197)
+}
+.content .btn{
+    margin-left: 85%;
+}
+
+.blog_item .img_wrapper{
+    width: 900px;
+    height: 350px;
+    margin-left: 20%;
+}
+.blog_item .img_wrapper img{
+    width: 100%;
+    height: 100%;
+}
+
+.user_blog{
+display: grid;
+grid-template-columns: 1fr 2fr;
+align-items: center;
+}
+
+.user_blog .img_wrapper{
+    width: 350px;
+    height: 200px;
+}
+
+.user_blog .img_wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

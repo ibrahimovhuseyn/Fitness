@@ -1,0 +1,35 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 25px;
+    height: 80px;
+    background: #000;
+}
+.logo h1{
+    color: #fff;
+    font-family: 'Preahvihear', sans-serif;
+}
+.logo .link{
+    text-decoration: none;
+    color: #fff;
+}
+.navbar a{
+    color: #e6e6e6;
+    text-decoration: none;
+    font-size: 14px;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 400;
+    color: #e6e6e6;
+}
+.navbar a:hover{
+    color: #fec771;
+    transition: .3s all ease;
+}
+.navbar ul li{
+    display: inline-block;
+    list-style-type: none;
+}

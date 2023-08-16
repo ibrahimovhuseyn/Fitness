@@ -48,6 +48,20 @@
       "img_url": "https://images02.military.com/sites/default/files/styles/full/public/2018-05/basic-combat-training-1200.jpg",
       "description": "Military education and training is a process which intends to establish and improve the capabilities of military personnel in their respective roles. Military training may be voluntary or compulsory duty. It begins with recruit training, proceeds to education and training specific to military roles, and sometimes includes additional training during a military career. Directing staff are the military personnel who comprise the instructional staff at a military training institution.\n\nIn some countries, military education and training are parts of the compulsory education. The organizers believe that military education can bring some benefits and experiences that cannot be obtained from normal class like setback education. Moreover, participants are able to learn survival skills during the military education, like co-operations and resilience, which help participants improve the capabilities of military personnel in their respective roles.",
       "id": 7
+    },
+    {
+      "user_id": 8,
+      "title": "About Whey Protein",
+      "img_url": "https://m.media-amazon.com/images/I/71WMr+UDpSL.jpg",
+      "description": "Whey protein is a supplement that people use alongside resistance exercise to help boost muscle protein synthesis and the growth of lean muscle mass. Other possible benefits include helping with weight loss and lowering cholesterol.\n\nMilk is made of two proteins, casein and whey. Whey protein can be separated from the casein in milk or formed as a by-product of cheese making. Whey protein is considered a complete protein as it contains all 9 essential amino acids. It is low in lactose content.\n\nThere are many benefits associated with the consumption of whey protein, and researchers are constantly finding new possible therapeutic properties. Here, we explain what the benefits might be, and look at some of the side effects and potential risks.",
+      "id": 8
+    },
+    {
+      "user_id": 9,
+      "title": "Diabertic Salads",
+      "img_url": "https://i.ndtvimg.com/i/2015-04/carrot-salad_625x350_41428671659.jpg",
+      "description": "You would be forgiven for thinking that all salads are healthy but in fact, many store-bought salads and salad dressings are full of hidden carbs, sugars, and other ingredients that you would probably prefer to be without.\n\nA diabetic salad is one that is low (or a least moderate) in carbs and won’t cause a spike in your blood sugar. Many of the recipes here are also high in protein which makes them very filling as a main meal. Healthy fats from avocados, nuts or a low-carb ranch dressing also make up part of a great diabetic salad recipe. ",
+      "id": 9
     }
   ],
   "users": [
@@ -80,12 +94,12 @@
     },
     {
       "id": 4,
-      "fullname": "Resad Sadiqov",
-      "username": "resad",
-      "email": "resad@mail.ru",
-      "nickname": "Akula",
-      "password": "resad",
-      "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/R%C9%99%C5%9Fad_Sad%C4%B1qov.jpg/640px-R%C9%99%C5%9Fad_Sad%C4%B1qov.jpg"
+      "fullname": "Leman Agayeva",
+      "username": "leman",
+      "email": "leman@mail.ru",
+      "nickname": "Princess",
+      "password": "leman",
+      "img_url": "https://thumb.spokesman.com/ryqfgdhJ5S0hJOvYVaxmV9Yvf34=/400x0/media.spokesman.com/photos/2005/09/14/jolie_people_09-14-2005_EK5GC5J.jpg"
     },
     {
       "fullname": "Sadiq Shabanov",
@@ -110,18 +124,53 @@
       "nickname": "miri_044",
       "password": "mirzeaga",
       "id": 7
+    },
+    {
+      "fullname": "Vahid Demirov",
+      "username": "vahid",
+      "email": "vahid@mail.ru",
+      "nickname": "vako",
+      "password": "vahid",
+      "id": 8
+    },
+    {
+      "fullname": "Aydan Memmedzade",
+      "username": "aydan",
+      "email": "aydan@mail.ru",
+      "nickname": "aydan039",
+      "password": "aydan",
+      "avatar": {},
+      "id": 9
+    },
+    {
+      "fullname": "lpl",
+      "username": "54545",
+      "email": "fes@mail.ru",
+      "nickname": "454",
+      "password": "lplpl",
+      "avatar": {},
+      "id": 10
+    },
+    {
+      "fullname": "Murad",
+      "username": "murad",
+      "email": "test@gmail.com",
+      "nickname": "murad",
+      "password": "123",
+      "avatar": "blob:http://localhost:5173/483bfab2-ca09-4e67-ba85-268411703ce4",
+      "id": 11
     }
   ],
   "products": [
     {
-      "id" : 1,
+      "id": 1,
       "name": "Whey Protein",
       "price": "156$",
       "img_url": "https://olimp.az/29-large_default/whey-protein-complex-700-qr.jpg",
       "about": "Whey is left over when milk is coagulated during the process of cheese production, and contains everything that is soluble from milk after the pH is dropped to 4.6 during the coagulation process. It is a 5% solution of lactose in water and contains the water soluble proteins of milk as well as some lipid content."
     },
     {
-      "id" : 2,
+      "id": 2,
       "name": "Amino 8000",
       "price": "60%",
       "img_url": "https://proteinshop.az/files/products/gaspari_aminomax8000_325_front.600x600.png",
@@ -135,7 +184,7 @@
       "about": "A combination of protein and carbohydrates.Thanks to its composition rich in protein and carbohydrates, the gainer is the ideal supplement if your goal is to have more strength, mass or gain weight. Its high caloric intake promotes gain in mass or gain in weight."
     },
     {
-      "id" : 4,
+      "id": 4,
       "name": "TurinaBol",
       "price": "44$",
       "img_url": "https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1678776196.webp",

@@ -5,21 +5,37 @@ import { errormessage } from '../../../Utils/Errormessage'
 import { toast } from 'react-toastify'
 import { apiUrl, toast_config } from '../../../Confiq'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 
+// create objectUrl from uploaded file
 
 
 function Register() {
 
+  const navigate = useNavigate()
 
   const [valiError, setValiError] = useState({})
   const [showPassword, setShowPassword] = useState(false)
   const [password, setPassword] = useState("")
+  const [selectedFile, setSelectedFile] = useState(null)
 
-  const handleCheckboxChange = () => {
+
+  const handleCheckboxChange = (e) => {
     setShowPassword(!showPassword);
   };
 
+  const handleFileChange = (e) => {
+    console.log("eee", e.target.files[0]);
+
+    // if (e.target.files[0].type !== "image/") {
+    //   alert("aaa")
+    //   return
+    // }
+
+    setSelectedFile(e.target.files[0])
+  }
+  console.log(selectedFile);
 
   function validation(data) {
     const errors = {
@@ -46,8 +62,9 @@ function Register() {
       errors.password = errormessage.required("Password")
     }
     if (!data.avatar) {
-      errors.avatar = errormessage.required("Avatar")
+      errors.avatar = errormessage.required("Image")
     }
+
     return errors
   }
 
@@ -59,18 +76,20 @@ function Register() {
     for (const [key, value] of formData.entries()) {
       data[key] = value
     }
+    console.log("data", data);
+
+    const img_url = URL.createObjectURL(data.avatar)
+
+    console.log("img_url", img_url);
+
+    // const errors = validation(data)
+    // setValiError(errors)
 
 
-
-
-    const errors = validation(data)
-    setValiError(errors)
-
-
-    if (Object.values(errors).filter(string => string).length) {
-      toast.error("Please filled the boxes", toast_config)
-      return
-    }
+    // if (Object.values(errors).filter(string => string).length) {
+    //   toast.error("Please filled the boxes", toast_config)
+    //   return
+    // }
 
     axios.post(`${apiUrl}/users`, {
       fullname: data.fullname,
@@ -78,14 +97,13 @@ function Register() {
       email: data.email,
       nickname: data.nickname,
       password: data.password,
-      avatar: data.avatar
+      avatar: img_url
     }).then(res => {
       event.target.reset()
       toast.success("Successfully register", toast_config)
+      navigate("/")
     })
   }
-
-
 
   return (
     <div className='register container my-5'>
@@ -112,12 +130,15 @@ function Register() {
             type={showPassword ? `text` : "password"}
             id='password'
             name='password'
-            value={password}
+            defaultValue={password}
             placeholder='Enter your password'
             className={`${valiError.password ? "border border-danger" : ""} w-50`}
-            onChange={e => setPassword(e.target.value)}
           />
+          {
+            valiError.password &&
+            <p className='text-danger mt-3'>{valiError.password}</p>
 
+          }
           <Input
             id='showPassword'
             type='checkbox'
@@ -133,6 +154,28 @@ function Register() {
             valiError.fullname &&
             <p className='text-danger mt-3'>{valiError.password}</p>
           }
+        </div>
+        {
+          selectedFile &&
+          <div>
+            <img
+              width="150"
+              height="150"
+              src={URL.createObjectURL(selectedFile)}
+              alt='img'
+            />
+          </div>
+        }
+        <div className="form-group mb-4">
+          <Label htmlFor='avatar'><b>Avatar:</b></Label>
+          <Input
+            type='file'
+            id='avatar'
+            name='avatar'
+            className='w-50'
+            accept='image/*'
+            onChange={(e) => handleFileChange(e)}
+          />
         </div>
         <div className="form-group mb-4">
           <Label htmlFor='email'><b>Email:</b></Label>
@@ -175,21 +218,6 @@ function Register() {
             valiError.nickname &&
             <p className='text-danger mt-3'>{valiError.nickname}</p>
           }
-
-          <div className="form-group mt-4">
-            <Label htmlFor='avatar'><b>Profile picture:</b></Label>
-            <Input
-              type='file'
-              id='avatar'
-              name='avatar'
-              placeholder=' '
-              className={`${valiError.avatar ? "border border-danger" : ""} w-50`}
-            />
-            {
-              valiError.author &&
-              <p className='text-danger mt-3'>{valiError.author}</p>
-            }
-          </div>
 
         </div>
         <button type='submit' className='btn btn-secondary btn-lg'>Submit</button>

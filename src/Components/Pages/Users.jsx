@@ -4,6 +4,8 @@ import axios from "axios"
 import { apiUrl } from '../../Confiq'
 import Loading from '../Lib/Loading'
 import { Link } from 'react-router-dom'
+import Message from '../../Utils/Message'
+import "../../assets/css/Users.css"
 
 function Users() {
   const [users, setUsers] = useState()
@@ -14,9 +16,9 @@ function Users() {
     axios.get(`${apiUrl}/users`).then(res => {
       setUsers(res.data)
       setIsLoading(false)
-
     })
   }, [])
+
 
   return (
     <Container>
@@ -24,13 +26,13 @@ function Users() {
         {
           !isLoading ?
             <Table hover>
-              <thead>
+              {/* <thead> */}
                 <th>No:</th>
                 <th>Fullname</th>
                 <th>Username</th>
                 <th>Email</th>
                 <th>Nickname</th>
-              </thead>
+              {/* </thead> */}
               <tbody>
                 {
                   users?.map((item, index) => (
@@ -57,6 +59,8 @@ function Users() {
             <Loading />
         }
       </div>
+      <Message sender="user" text="Hello how are you?" />
+      <Message sender="bot" text="I'm a bot. I'm doing fine!" />
     </Container>
   )
 }

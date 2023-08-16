@@ -22,7 +22,6 @@ setData({...data, author: res.data.fullname})
 })
     },[data.id])
 
-    console.log(data);
     return (
         <div className='blog_item container'>
                 <h2 className='text-muted fw-bold'>{data.author}</h2>

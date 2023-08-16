@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Container, Form, Input, Label } from "reactstrap"
 import "../../assets/css/Home.css"
 import { BsFacebook } from "react-icons/bs"
@@ -8,9 +8,12 @@ import axios from 'axios'
 import { apiUrl, toast_config } from '../../Confiq'
 import { toast } from 'react-toastify'
 import Swal from 'sweetalert2/dist/sweetalert2.js'
+import { AppContext } from '../../context/AppContext'
 
 
 function Home() {
+
+  const { setIsAuth } = useContext(AppContext)
 
   const [showPassword, setShowPassword] = useState(false)
   const [password, setPassword] = useState("")
@@ -19,7 +22,6 @@ function Home() {
 
   const navigate = useNavigate()
 
-
   useEffect(() => {
     getUsers()
   }, [])
@@ -27,7 +29,6 @@ function Home() {
   function getUsers() {
     axios.get(`${apiUrl}/users`).then(res => setUsers(res.data))
   }
-  console.log(users);
 
   function handleCheckboxChange() {
     setShowPassword(!showPassword)
@@ -41,26 +42,31 @@ function Home() {
       data[key] = value
     }
 
-    const fullname = data.fullname
-    const password = data.password
+    // const fullname = data.fullname
+    // const password = data.password
 
-    users.map(item => {
-      if (item.username === fullname && item.password === password) {
-        toast.success("Success", toast_config)
-        e.target.reset()
-        navigate(`/userblog/${item.id}`)
+    const { fullname, password } = data
 
-      }
-      else {
-        Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: 'Enter your fullname and password!',
-        })
-        return
-      }
+    console.log(fullname);
+    console.log(password);
 
-    })
+    const selectedUSer = users.find(item => item.username === fullname && item.password === password)
+
+    if (!selectedUSer) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Username or password is not valid!',
+      })
+      return
+    }
+
+    console.log(selectedUSer);
+
+    setIsAuth(true)
+    localStorage.setItem("isAuth", true)
+    navigate("/blogs")
+
   }
   return (
     <Container>

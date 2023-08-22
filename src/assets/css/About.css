@@ -41,6 +41,12 @@ padding: 10px;
 .trainers .img-wrapper{
     width: 150px;
     height: 150px;
+    position: relative;
+}
+.price{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 50px;
 }
 .products .img_wrapper{
     width: 130px;

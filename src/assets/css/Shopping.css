@@ -1,0 +1,47 @@
+.shopping {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.product {
+    padding: 10px;
+    position: relative;
+
+}
+
+.img-wrapper {
+    width: 400px;
+    height: 250px;
+}
+
+.img-wrapper img {
+    height: 100%;
+    width: 100%;
+}
+
+.item_about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.absolute{
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+.bag a{
+    text-decoration: none;
+    color: blue;
+}
+.bag .hover{
+    display: none;
+}
+.bag a:hover.hover{
+    display: block;
+}
+
+
+.selected .btn{
+    margin-right: 0;
+}

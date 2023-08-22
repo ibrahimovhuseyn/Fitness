@@ -12,8 +12,8 @@ function Nav() {
             <ul>
                 <li>
                     <Link
-                        to="/"
-                        className='link'
+                        to="/blogs"
+                        className='link active'
                     >
                         Home
                     </Link>
@@ -47,12 +47,13 @@ function Nav() {
 
                 <li>
                     <Link
-                        to="/blogs"
+                        to="/shopping"
                         className='link'
                     >
-                        Blogs
+                        Shopping online
                     </Link>
                 </li>
+
 
                 <li>
                     <Link

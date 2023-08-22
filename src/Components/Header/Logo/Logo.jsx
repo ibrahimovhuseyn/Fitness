@@ -6,7 +6,7 @@ function Logo() {
         <div className='logo'>
             <div className="img-wrapper">
                 <h1>
-                    <Link className='link' to="/">
+                    <Link className='link' to="/blogs">
                         MEGAWIDTH
                     </Link>
                 </h1>

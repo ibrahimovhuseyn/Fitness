@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Button, Container, Form, FormGroup, Input, Label, Toast } from 'reactstrap'
-import Select from 'react-select';
+  import Select from 'react-select';
 import axios from 'axios';
 import { apiUrl, toast_config } from '../../Confiq';
 import { errormessage } from '../../Utils/Errormessage';

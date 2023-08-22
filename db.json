@@ -165,28 +165,28 @@
     {
       "id": 1,
       "name": "Whey Protein",
-      "price": "156$",
+      "price": "156",
       "img_url": "https://olimp.az/29-large_default/whey-protein-complex-700-qr.jpg",
       "about": "Whey is left over when milk is coagulated during the process of cheese production, and contains everything that is soluble from milk after the pH is dropped to 4.6 during the coagulation process. It is a 5% solution of lactose in water and contains the water soluble proteins of milk as well as some lipid content."
     },
     {
       "id": 2,
       "name": "Amino 8000",
-      "price": "60%",
+      "price": "60",
       "img_url": "https://proteinshop.az/files/products/gaspari_aminomax8000_325_front.600x600.png",
       "about": "Gaspari Nutrition's AMINOMAX 8000 is a scientifically designed blend of 91% hydrolyzed lactalbumin from whey protein, containing very low molecular weight proteins, di- and tri- peptides and individual amino acids infused with additional L-Leucine and L-Taurine, proven to be exceedingly beneficial to all types of ..."
     },
     {
       "id": 3,
       "name": "Gainer",
-      "price": "95$",
+      "price": "95",
       "img_url": "https://s3.images-iherb.com/opn/opn02971/y/41.jpg",
       "about": "A combination of protein and carbohydrates.Thanks to its composition rich in protein and carbohydrates, the gainer is the ideal supplement if your goal is to have more strength, mass or gain weight. Its high caloric intake promotes gain in mass or gain in weight."
     },
     {
       "id": 4,
       "name": "TurinaBol",
-      "price": "44$",
+      "price": "44",
       "img_url": "https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1678776196.webp",
       "about": "What is Turinabol? Turinabol's anabolic ability makes it the best steroid for speedy recovery which will come in handy to reduce swelling, and muscle fatigue to help users exercise for longer. Turinabol steroid entered into medical science for the treatment of Osteoporosis, but later it was discontinued"
     }

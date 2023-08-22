@@ -82,14 +82,14 @@ function Register() {
 
     console.log("img_url", img_url);
 
-    // const errors = validation(data)
-    // setValiError(errors)
+    const errors = validation(data)
+    setValiError(errors)
 
 
-    // if (Object.values(errors).filter(string => string).length) {
-    //   toast.error("Please filled the boxes", toast_config)
-    //   return
-    // }
+    if (Object.values(errors).filter(string => string).length) {
+      toast.error("Please filled the boxes", toast_config)
+      return
+    }
 
     axios.post(`${apiUrl}/users`, {
       fullname: data.fullname,

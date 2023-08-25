@@ -17,7 +17,6 @@ import Register from './Components/Header/Nav/Register';
 import { AppContext } from './context/AppContext';
 import { toast } from 'react-toastify'
 import { toast_config } from './Confiq';
-import { Swal } from 'sweetalert2/dist/sweetalert2';
 import Shopping from './Components/Pages/Shopping';
 import Selected from './Components/Pages/Selected';
 

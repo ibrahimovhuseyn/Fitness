@@ -32,19 +32,19 @@ function App() {
     const existProduct = product.find(item => item.id === state.id)
     setCount(prevState => prevState + 1)
 
-    if(!existProduct){
-      setProduct(prevState =>[
+    if (!existProduct) {
+      setProduct(prevState => [
         ...prevState, {
           id: state.id,
           name: state.name,
           price: state.price,
-          count : 1
+          count: 1
         }
-      ] )
+      ])
       return
     }
     existProduct.count = existProduct.count + 1
-    setProduct(prevState=>prevState)
+    setProduct(prevState => prevState)
   }
 
 
@@ -66,7 +66,7 @@ function App() {
       <ToastContainer />
       {
         isAuth ?
-          <div>
+        < div >
             <Header />
             <Routes>
               <Route path='/users' element={<Users />} />
@@ -80,12 +80,12 @@ function App() {
             </Routes>
           </div>
           :
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/register' element={<Register />} />
-          </Routes>
-      }
-    </AppContext.Provider>
+  <Routes>
+    <Route path='/' element={<Home />} />
+    <Route path='/register' element={<Register />} />
+  </Routes>
+}
+    </AppContext.Provider >
   )
 }
 

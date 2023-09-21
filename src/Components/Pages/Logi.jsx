@@ -18,6 +18,7 @@ function  Home() {
   const [showPassword, setShowPassword] = useState(false)
   const [password, setPassword] = useState("")
 
+  let name = "huseyn"
   const [users, setUsers] = useState([])
 
   const navigate = useNavigate()
@@ -72,7 +73,7 @@ function  Home() {
             <h1>MEGAWIDTH</h1>
             <Form
               onSubmit={e => login(e)}
-            >
+            > 
               <Input
                 name='fullname'
                 type='text'
